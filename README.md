@@ -25,9 +25,9 @@ WHLL (Wikipedia Hyperlink-based Location Linking) is a method for automatic cons
    
 3. Check output files
    - coord.tsv
-```Title\tLatitude\tLongitude\tArticleID\tis_redirect
-Mid Antrim (Northern Ireland Parliament constituency)   54.91100        -6.14700        10000032        0
-Antrim Mid (Northern Ireland Parliament constituency)   54.91100        -6.14700        10000032        1```
+> Title	Latitude	Longitude	ArticleID	is_redirect<br>
+> Mid Antrim (Northern Ireland Parliament constituency)   54.91100        -6.14700        10000032        0<br>
+> Antrim Mid (Northern Ireland Parliament constituency)   54.91100        -6.14700        10000032        1<br>
    - {fileid}.jsonl
 	 - JSON Lines format
 		 - id: article id
@@ -35,14 +35,20 @@ Antrim Mid (Northern Ireland Parliament constituency)   54.91100        -6.14700
 		 - text: article body text
 		 - gold: list of location expressions
 			 - [start\_pos, end\_pos, expression, [latitude, longitude]]
-		 - e.g. ```{"id": 187911, "title": "Kyoto University", "text": " (京都大学, Kyōto daigaku), or  (京大, Kyōdai), is a public research universit
-		 y located in Kyoto, Japan. Founded in 1897, ...", "gold": [[85, 90, "Kyoto", [35.01167, 135.76833]], [92, 97, "Japan", [36.0, 138.0]], ...]```
+> {<br>
+>	"id": 187911,<br>
+>	"title": "Kyoto University",<br>
+>	"text": " (京都大学, Kyōto daigaku), or  (京大, Kyōdai), is a public research university located in Kyoto, Japan. Founded in 1897, ...",<br>
+>	"gold": [[85, 90, "Kyoto", [35.01167, 135.76833]], [92, 97, "Japan", [36.0, 138.0]], ...]<br>
+> }
    
 ## Citing WHLL (TBA)
 
-```@inproceedings{ohno2024automatic,
+```
+@inproceedings{ohno2024automatic,
 	title={Automatic Construction of a Large-Scale Corpus for Geoparsing Using Wikipedia Hyperlinks},
 	author={Ohno, Keyaki and Kameko, Hirotaka and Shirai, Keisuke and Nishimura, Taichi and Mori, Shinsuke},
 	booktitle={Proceedings of The 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024)},
 	year=2024,
-}```
+}
+```
